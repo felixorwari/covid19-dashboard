@@ -60,11 +60,11 @@ export default {
 
             <div class="flex justify-between text-xs font-medium">
                 <p class="text-gray-400 uppercase">
-                    <span class="px-2 text-red-700 bg-red-300 rounded-full">Positive</span>
+                    <span class="px-2 text-red-700 bg-red-200 rounded-full">Positive</span>
                     <span class="ml-2 text-gray-700">{{ (testingData.citizensTested.positive).toLocaleString() }}</span>
                 </p>
                 <p class="text-gray-400 uppercase">
-                    <span class="px-2 text-green-700 bg-green-300 rounded-full">Negative</span>
+                    <span class="px-2 rounded-full text-lime-700 bg-lime-200">Negative</span>
                     <span class="ml-2 text-gray-700">{{ (testingData.citizensTested.negative).toLocaleString() }}</span>
                 </p>
             </div>
@@ -80,11 +80,11 @@ export default {
 
             <div class="flex justify-between text-xs font-medium">
                 <p class="text-gray-400 uppercase">
-                    <span class="px-2 text-red-700 bg-red-300 rounded-full">Positive</span>
+                    <span class="px-2 text-red-700 bg-red-200 rounded-full">Positive</span>
                     <span class="ml-2 text-gray-700">{{ (testingData.foreignersTested.positive).toLocaleString() }}</span>
                 </p>
                 <p class="text-gray-400 uppercase">
-                    <span class="px-2 text-green-700 bg-green-300 rounded-full">Negative</span>
+                    <span class="px-2 rounded-full text-lime-700 bg-lime-200">Negative</span>
                     <span class="ml-2 text-gray-700">{{ (testingData.foreignersTested.negative).toLocaleString() }}</span>
                 </p>
             </div>
