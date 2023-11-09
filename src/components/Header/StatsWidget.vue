@@ -21,11 +21,11 @@ export default {
                 }
                 return response.json();
             })
-                .then((data) => {
+            .then((data) => {
                 this.testingData = data;
                 this.loading = false; // Set loading to false once data is fetched
             })
-                .catch((error) => {
+            .catch((error) => {
                 console.error('Error fetching data:', error);
             });
         }
@@ -59,8 +59,14 @@ export default {
             </div>
 
             <div class="flex justify-between text-xs font-medium">
-                <p class="text-gray-400 uppercase">Positive <span class="ml-2 text-gray-700">{{ (testingData.citizensTested.positive).toLocaleString() }}</span></p>
-                <p class="text-gray-400 uppercase">Negative <span class="ml-2 text-gray-700">{{ (testingData.citizensTested.negative).toLocaleString() }}</span></p>
+                <p class="text-gray-400 uppercase">
+                    <span class="px-2 text-red-700 bg-red-300 rounded-full">Positive</span>
+                    <span class="ml-2 text-gray-700">{{ (testingData.citizensTested.positive).toLocaleString() }}</span>
+                </p>
+                <p class="text-gray-400 uppercase">
+                    <span class="px-2 text-green-700 bg-green-300 rounded-full">Negative</span>
+                    <span class="ml-2 text-gray-700">{{ (testingData.citizensTested.negative).toLocaleString() }}</span>
+                </p>
             </div>
         </div>
         
@@ -73,8 +79,14 @@ export default {
             </div>
 
             <div class="flex justify-between text-xs font-medium">
-                <p class="text-gray-400 uppercase">Positive <span class="ml-2 text-gray-700">{{ (testingData.foreignersTested.positive).toLocaleString() }}</span></p>
-                <p class="text-gray-400 uppercase">Negative <span class="ml-2 text-gray-700">{{ (testingData.foreignersTested.negative).toLocaleString() }}</span></p>
+                <p class="text-gray-400 uppercase">
+                    <span class="px-2 text-red-700 bg-red-300 rounded-full">Positive</span>
+                    <span class="ml-2 text-gray-700">{{ (testingData.foreignersTested.positive).toLocaleString() }}</span>
+                </p>
+                <p class="text-gray-400 uppercase">
+                    <span class="px-2 text-green-700 bg-green-300 rounded-full">Negative</span>
+                    <span class="ml-2 text-gray-700">{{ (testingData.foreignersTested.negative).toLocaleString() }}</span>
+                </p>
             </div>
         </div>
     </div>
