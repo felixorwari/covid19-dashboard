@@ -4,10 +4,12 @@ import HeaderWidgets from './components/Header/HeaderWidgets.vue'
 import RegisteredLabs from './components/Cards/RegisteredLabs.vue';
 import PositiveCases from './components/Cards/PositiveCases.vue';
 import NegativeCases from './components/Cards/NegativeCases.vue';
+import StatesLeaderboard from './components/Tables/StatesLeaderboard.vue';
+import LabLeaderboard from './components/Tables/LabLeaderboard.vue';
 
 export default {
   components: {
-    FilterButtons, HeaderWidgets, RegisteredLabs, PositiveCases, NegativeCases
+    FilterButtons, HeaderWidgets, RegisteredLabs, PositiveCases, NegativeCases, StatesLeaderboard, LabLeaderboard
   }
 }
 </script>
@@ -27,10 +29,10 @@ export default {
         Covid-19 Positive Cases by County (Map)
       </div>
       <div class="col-span-1">
-        
+        <states-leaderboard></states-leaderboard>
       </div>
       <div class="col-span-1">
-        
+        <lab-leaderboard></lab-leaderboard>
       </div>
       <div class="col-span-2">
         Covid-19 Cases (Chart)
