@@ -24,7 +24,7 @@ export default {
       <negative-cases></negative-cases>
 
       <div class="col-span-2">
-        
+        Covid-19 Positive Cases by County (Map)
       </div>
       <div class="col-span-1">
         
@@ -33,7 +33,7 @@ export default {
         
       </div>
       <div class="col-span-2">
-        
+        Covid-19 Cases (Chart)
       </div>
     </div>
   </div>
