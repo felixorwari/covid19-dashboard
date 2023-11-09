@@ -1,10 +1,13 @@
 <script>
 import FilterButtons from './components/FilterButtons.vue'
 import HeaderWidgets from './components/Header/HeaderWidgets.vue'
+import RegisteredLabs from './components/Cards/RegisteredLabs.vue';
+import PositiveCases from './components/Cards/PositiveCases.vue';
+import NegativeCases from './components/Cards/NegativeCases.vue';
 
 export default {
   components: {
-    FilterButtons, HeaderWidgets
+    FilterButtons, HeaderWidgets, RegisteredLabs, PositiveCases, NegativeCases
   }
 }
 </script>
@@ -14,6 +17,12 @@ export default {
     <filter-buttons></filter-buttons>
 
     <header-widgets></header-widgets>
+
+    <div class="grid lg:grid-cols-3 gap-7">
+      <registered-labs></registered-labs>
+      <positive-cases></positive-cases>
+      <negative-cases></negative-cases>
+    </div>
   </div>
 </template>
 
