@@ -16,7 +16,19 @@
     "tests": 3000
   },
   "5": {
-    "name": "Healthy",
-    "tests": 2000
+    "name": "Kawaii",
+    "tests": 600
+  },
+  "6": {
+    "name": "Chowla",
+    "tests": 9100
+  },
+  "7": {
+    "name": "Lufiti",
+    "tests": 2390
+  },
+  "8": {
+    "name": "Monty",
+    "tests": 86
   }
 }
