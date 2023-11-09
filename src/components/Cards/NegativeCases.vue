@@ -21,7 +21,7 @@ export default {
             </p>
           </div>
         </div>
-        <div class="flex justify-between p-4 text-sm uppercase bg-gray-100 rounded-b-lg">
+        <div class="flex justify-between px-6 py-4 text-sm uppercase bg-gray-100 rounded-b-lg">
           <p class="font-bold text-gray-400">Males: <span class="font-normal">42,054</span></p>
           <p class="font-bold text-gray-400">Females: <span class="font-normal">51,371</span></p>
         </div>

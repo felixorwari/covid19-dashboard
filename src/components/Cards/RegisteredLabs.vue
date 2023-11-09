@@ -21,7 +21,7 @@ export default {
             </p>
           </div>
         </div>
-        <div class="p-4 text-sm bg-gray-100 rounded-b-lg">
+        <div class="px-6 py-4 text-sm bg-gray-100 rounded-b-lg">
           <p>&nbsp;</p>
         </div>
     </div>
