@@ -1,8 +1,16 @@
 {
-  "total": {
-    "travel": 123932,
-    "screening": 47965
-  },
-  "citizens": 21800,
-  "foreigners": 150097
+  "testingData": {
+    "totalTested": {
+      "travel": 123932,
+      "screening": 47965
+    },
+    "citizensTested": {
+      "positive": 5687,
+      "negative": 16113
+    },
+    "foreignersTested": {
+      "positive": 2743,
+      "negative": 147354
+    }
+  }
 }
