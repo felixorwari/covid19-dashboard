@@ -22,6 +22,19 @@ export default {
       <registered-labs></registered-labs>
       <positive-cases></positive-cases>
       <negative-cases></negative-cases>
+
+      <div class="col-span-2">
+        
+      </div>
+      <div class="col-span-1">
+        
+      </div>
+      <div class="col-span-1">
+        
+      </div>
+      <div class="col-span-2">
+        
+      </div>
     </div>
   </div>
 </template>
