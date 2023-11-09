@@ -6,10 +6,18 @@ import PositiveCases from './components/Cards/PositiveCases.vue';
 import NegativeCases from './components/Cards/NegativeCases.vue';
 import StatesLeaderboard from './components/Tables/StatesLeaderboard.vue';
 import LabLeaderboard from './components/Tables/LabLeaderboard.vue';
+import MonthlyCases from './components/Charts/MonthlyCases.vue';
 
 export default {
   components: {
-    FilterButtons, HeaderWidgets, RegisteredLabs, PositiveCases, NegativeCases, StatesLeaderboard, LabLeaderboard
+    FilterButtons, 
+    HeaderWidgets, 
+    RegisteredLabs, 
+    PositiveCases, 
+    NegativeCases, 
+    StatesLeaderboard, 
+    LabLeaderboard, 
+    MonthlyCases
   }
 }
 </script>
@@ -35,10 +43,8 @@ export default {
         <lab-leaderboard></lab-leaderboard>
       </div>
       <div class="col-span-2">
-        Covid-19 Cases (Chart)
+        <monthly-cases class="mx-auto"></monthly-cases>
       </div>
     </div>
   </div>
 </template>
-
-<style></style>
