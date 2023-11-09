@@ -1,7 +1,22 @@
 {
-  "Karis": 2780,
-  "Emu": 20000,
-  "Sandhu": 6700,
-  "Mikaa": 3000,
-  "Healthy": 2000
+  "1": {
+    "name": "Karis",
+    "tests": 2780
+  },
+  "2": {
+    "name": "Emu",
+    "tests": 20000
+  },
+  "3": {
+    "name": "Sandhu",
+    "tests": 6700
+  },
+  "4": {
+    "name": "Mikaa",
+    "tests": 3000
+  },
+  "5": {
+    "name": "Healthy",
+    "tests": 2000
+  }
 }
