@@ -1,5 +1,3 @@
-<script></script>
-
 <template>
     <!-- Filter Buttons -->
     <div class="inline-flex text-xs rounded-md shadow-sm" role="group">
