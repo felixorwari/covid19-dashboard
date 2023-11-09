@@ -48,7 +48,7 @@ export default {
         </template>
         
         <template #table-rows>
-            <tr v-for="item in statesData" :key="item.name" class="border-b">
+            <tr v-for="item in statesData" :key="item.name" class="border-b hover:bg-gray-50">
                 <td class="py-3 pl-6 pr-2">{{ item.name }}</td>
                 <td class="px-2 py-3 text-right">{{ (item.positive).toLocaleString() }}</td>
                 <td class="py-3 pl-2 pr-6 text-right">{{ (item.negative).toLocaleString() }}</td>

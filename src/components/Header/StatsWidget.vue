@@ -35,8 +35,8 @@ export default {
 
 <template>
     <div v-if="loading" class="mx-auto animate-pulse">Loading...</div>
-    <div v-else class="grid grid-cols-3 divide-x divide-y">
-        <div class="flex flex-col px-7 pt-5 pb-2.5">
+    <div v-else class="grid grid-cols-3 divide-x">
+        <div class="flex flex-col py-5 px-7">
             <h4 class="text-sm font-medium text-gray-400">Total Tested</h4>
             
             <div class="flex justify-between mb-2 gap-7">
@@ -50,7 +50,7 @@ export default {
             </div>
         </div>
         
-        <div class="flex flex-col px-7 pt-5 pb-2.5">
+        <div class="flex flex-col py-5 px-7">
             <h4 class="text-sm font-medium text-gray-400">Citizens Tested</h4>
             
             <div class="flex justify-between mb-2 gap-7">
@@ -70,7 +70,7 @@ export default {
             </div>
         </div>
         
-        <div class="flex flex-col px-7 pt-5 pb-2.5">
+        <div class="flex flex-col py-5 px-7">
             <h4 class="text-sm font-medium text-gray-400">Foreigners Tested</h4>
             
             <div class="flex justify-between mb-2 gap-7">
