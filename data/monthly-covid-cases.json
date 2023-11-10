@@ -12,7 +12,7 @@
   "3": {
     "month": "Mar",
     "positive": "750",
-    "negative": "1920"
+    "negative": "1820"
   },
   "4": {
     "month": "Apr",
@@ -42,7 +42,7 @@
   "9": {
     "month": "Sep",
     "positive": "648",
-    "negative": "1749"
+    "negative": "1649"
   },
   "10": {
     "month": "Oct",
@@ -57,6 +57,6 @@
   "12": {
     "month": "Dec",
     "positive": "840",
-    "negative": "2200"
+    "negative": "1980"
   }
 }
