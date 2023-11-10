@@ -33,15 +33,22 @@ export default {
       <positive-cases></positive-cases>
       <negative-cases></negative-cases>
 
-      <div class="col-span-2">
-        Covid-19 Positive Cases by County (Map)
+      <div class="flex col-span-2">
+        <div class="w-full min-h-full bg-white rounded-lg shadow">
+          <div class="px-6 py-5 border-b">
+              <h4 class="font-semibold">Covid-19 Positive Cases by County</h4>
+          </div>
+        </div>
       </div>
+      
       <div class="col-span-1">
         <states-leaderboard></states-leaderboard>
       </div>
+      
       <div class="col-span-1">
         <lab-leaderboard></lab-leaderboard>
       </div>
+      
       <div class="col-span-2">
         <monthly-cases class="mx-auto"></monthly-cases>
       </div>
