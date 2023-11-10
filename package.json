@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "apexcharts": "^3.44.0",
+    "highcharts": "^11.2.0",
+    "highcharts-vue": "^1.4.3",
     "vue": "^3.3.4",
     "vue3-apexcharts": "^1.4.4"
   },
