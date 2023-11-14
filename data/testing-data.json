@@ -1,0 +1,14 @@
+{
+  "totalTested": {
+    "travel": 123937,
+    "screening": 47965
+  },
+  "citizensTested": {
+    "positive": 5687,
+    "negative": 16113
+  },
+  "foreignersTested": {
+    "positive": 2743,
+    "negative": 147354
+  }
+}

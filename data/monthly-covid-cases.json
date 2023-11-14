@@ -1,0 +1,62 @@
+{
+  "1": {
+    "month": "Jan",
+    "positive": "520",
+    "negative": "1161"
+  },
+  "2": {
+    "month": "Feb",
+    "positive": "256",
+    "negative": "650"
+  },
+  "3": {
+    "month": "Mar",
+    "positive": "750",
+    "negative": "1820"
+  },
+  "4": {
+    "month": "Apr",
+    "positive": "400",
+    "negative": "700"
+  },
+  "5": {
+    "month": "May",
+    "positive": "100",
+    "negative": "379"
+  },
+  "6": {
+    "month": "Jun",
+    "positive": "220",
+    "negative": "384"
+  },
+  "7": {
+    "month": "Jul",
+    "positive": "150",
+    "negative": "432"
+  },
+  "8": {
+    "month": "Aug",
+    "positive": "614",
+    "negative": "1432"
+  },
+  "9": {
+    "month": "Sep",
+    "positive": "648",
+    "negative": "1649"
+  },
+  "10": {
+    "month": "Oct",
+    "positive": "523",
+    "negative": "1100"
+  },
+  "11": {
+    "month": "Nov",
+    "positive": "269",
+    "negative": "600"
+  },
+  "12": {
+    "month": "Dec",
+    "positive": "840",
+    "negative": "1980"
+  }
+}

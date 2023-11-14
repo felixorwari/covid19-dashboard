@@ -1,0 +1,52 @@
+{
+  "1": {
+    "name": "Nairobi",
+    "positive": 20502,
+    "negative": 3304
+  },
+  "2": {
+    "name": "Mombasa",
+    "positive": 134,
+    "negative": 1994
+  },
+  "3": {
+    "name": "Wajir",
+    "positive": 245,
+    "negative": 766
+  },
+  "4": {
+    "name": "Homabay",
+    "positive": 135,
+    "negative": 544
+  },
+  "5": {
+    "name": "Migori",
+    "positive": 52,
+    "negative": 130
+  },
+  "6": {
+    "name": "Mandera",
+    "positive": 424,
+    "negative": 1245
+  },
+  "7": {
+    "name": "Kiambu",
+    "positive": 2145,
+    "negative": 22983
+  },
+  "8": {
+    "name": "Kisumu",
+    "positive": 89,
+    "negative": 654
+  },
+  "9": {
+    "name": "Kajiado",
+    "positive": 404,
+    "negative": 1385
+  },
+  "10": {
+    "name": "Narok",
+    "positive": 13,
+    "negative": 152
+  }
+}
