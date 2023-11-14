@@ -7,6 +7,7 @@ import NegativeCases from './components/Cards/NegativeCases.vue'
 import StatesLeaderboard from './components/Tables/StatesLeaderboard.vue'
 import LabLeaderboard from './components/Tables/LabLeaderboard.vue'
 import MonthlyCases from './components/Charts/MonthlyCases.vue'
+import KenyaCounties from './components/Maps/KenyaCounties.vue'
 
 export default {
   components: {
@@ -17,7 +18,8 @@ export default {
     NegativeCases,
     StatesLeaderboard,
     LabLeaderboard,
-    MonthlyCases
+    MonthlyCases,
+    KenyaCounties
   }
 }
 </script>
@@ -38,6 +40,8 @@ export default {
           <div class="px-6 py-5 border-b">
             <h4 class="font-semibold">Covid-19 Positive Cases by County</h4>
           </div>
+
+          <kenya-counties></kenya-counties>
         </div>
       </div>
 
