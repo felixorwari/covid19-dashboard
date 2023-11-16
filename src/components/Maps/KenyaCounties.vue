@@ -31,6 +31,14 @@ export default {
   }
 }
 </script>
+
 <template>
-  <highcharts :constructor-type="'mapChart'" :options="mapOptions"></highcharts>
+  <highcharts :constructor-type="'mapChart'" :options="mapOptions" class="w-auto h-full rounded-b-lg"></highcharts>
 </template>
+
+<style>
+.highcharts-container {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+</style>
