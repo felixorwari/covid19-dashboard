@@ -45,7 +45,9 @@ export default {
             (testingData.totalTested.travel + testingData.totalTested.screening).toLocaleString()
           }}
         </p>
-        <div class="chart"></div>
+        <div class="chart">
+          <img src="../../assets/line-chart.svg" class="object-contain w-32 h-auto" alt="line chart">
+        </div>
       </div>
 
       <div class="flex justify-between text-xs font-medium">
@@ -75,7 +77,9 @@ export default {
             ).toLocaleString()
           }}
         </p>
-        <div class="chart"></div>
+        <div class="chart">
+          <img src="../../assets/line-chart.svg" class="object-contain w-32 h-auto" alt="line chart">
+        </div>
       </div>
 
       <div class="flex justify-between text-xs font-medium">
@@ -105,7 +109,9 @@ export default {
             ).toLocaleString()
           }}
         </p>
-        <div class="chart"></div>
+        <div class="chart">
+          <img src="../../assets/line-chart.svg" class="object-contain w-32 h-auto" alt="line chart">
+        </div>
       </div>
 
       <div class="flex justify-between text-xs font-medium">
