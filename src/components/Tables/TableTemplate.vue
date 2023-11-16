@@ -1,5 +1,5 @@
 <template>
-  <div class="relative overflow-x-auto bg-white rounded-lg shadow">
+  <div class="relative h-full overflow-x-auto bg-white rounded-lg shadow">
     <div class="px-6 py-5">
       <slot name="heading"></slot>
     </div>
