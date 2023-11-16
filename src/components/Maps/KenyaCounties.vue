@@ -9,7 +9,7 @@ export default {
           map: kenyaMapData
         },
         title: {
-          text: 'Covid-19 Positive Case by Counties'
+          text: ''
         },
         series: [
           {
