@@ -16,7 +16,7 @@ export default {
       </div>
       <div>
         <h5>Negative Cases</h5>
-        <p class="text-4xl font-bold">
+        <p class="text-2xl font-bold">
           93,425
           <span class="ml-2 text-sm text-green-600"><i class="fa-solid fa-arrow-up"></i> 7.2%</span>
         </p>
