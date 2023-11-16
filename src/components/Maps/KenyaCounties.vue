@@ -1,15 +1,35 @@
 <script>
-import kenyaMapData from '../../map'
+import kenyaMap from './map'
 
 export default {
   data() {
     return {
       mapOptions: {
         chart: {
-          map: kenyaMapData
+          map: kenyaMap
         },
         title: {
           text: ''
+        },
+        accessibility: {
+          series: {
+            descriptionFormat: '{series.name} in Kenya by county'
+          },
+          point: {
+            valueDescriptionFormat: '{point.hc-key}.'
+          }
+        },
+        legend: {
+          enabled: false
+        },
+        colorAxis: {
+          min: 10,
+          max: 25000,
+          type: 'logarithmic',
+          stops: [
+            [0, '#E9C9D2'],
+            [1, '#AE141F']
+          ]
         },
         series: [
           {
@@ -17,16 +37,55 @@ export default {
             name: 'Covid-19 Positive Cases',
             states: {
               hover: {
-                color: '#BADA55'
+                color: '#FF001326',
+                borderColor: '#D13F4A'
               }
             },
             dataLabels: {
-              enabled: true,
-              format: '{point.name}'
+              enabled: false
+            },
+            tooltip: {
+              valueSuffix: ' cases',
+              pointFormat: '<b>{point.hc-key} County</b>: {point.value}'
             }
           }
         ]
       }
+    }
+  },
+  async mounted() {
+    try {
+      // fetch and hydrate series data
+      this.fetchSeriesData()
+    } catch (error) {
+      console.error('Error populating covid 19 positive cases data:', error)
+    }
+  },
+  methods: {
+    fetchSeriesData() {
+      // Fetch data from the states JSON file
+      fetch('/data/states-leaderboard.json')
+        .then(response => response.json())
+        .then(data => {
+          // Assign the fetched data to the map series data property
+          this.transformSeriesData(data);
+        })
+        .catch(error => {
+          console.error('Error fetching map series data:', error);
+        });
+    },
+    transformSeriesData(originalData) {
+      // Iterate over the keys of the original data
+      Object.keys(originalData).forEach(key => {
+        const locationData = originalData[key];
+
+        const transformedData = [
+          locationData.name, locationData.positive
+        ];
+
+        // Push the new object into the map series data array
+        this.mapOptions.series[0].data.push(transformedData);
+      })
     }
   }
 }
