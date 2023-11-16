@@ -7,6 +7,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Baringo',
+          properties: {
+            'hc-key': 'Baringo'
+          },
           coordinates: [
             [
               [
@@ -2183,6 +2186,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Samburu',
+          properties: {
+            'hc-key': 'Samburu'
+          },
           coordinates: [
             [
               [
@@ -3516,6 +3522,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Bomet',
+          properties: {
+            'hc-key': 'Bomet'
+          },
           coordinates: [
             [
               [
@@ -4299,6 +4308,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Bungoma',
+          properties: {
+            'hc-key': 'Bungoma'
+          },
           coordinates: [
             [
               [
@@ -6169,6 +6181,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Busia',
+          properties: {
+            'hc-key': 'Busia'
+          },
           coordinates: [
             [
               [
@@ -10849,6 +10864,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Elgeyo Marakwet',
+          properties: {
+            'hc-key': 'Elgeyo Marakwet'
+          },
           coordinates: [
             [
               [
@@ -12816,6 +12834,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Embu',
+          properties: {
+            'hc-key': 'Embu'
+          },
           coordinates: [
             [
               [
@@ -13575,6 +13596,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Garissa',
+          properties: {
+            'hc-key': 'Garissa'
+          },
           coordinates: [
             [
               [
@@ -14744,6 +14768,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Homabay',
+          properties: {
+            'hc-key': 'Homabay'
+          },
           coordinates: [
             [
               [
@@ -15913,6 +15940,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Isiolo',
+          properties: {
+            'hc-key': 'Isiolo'
+          },
           coordinates: [
             [
               [
@@ -17391,6 +17421,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Kajiado',
+          properties: {
+            'hc-key': 'Kajiado'
+          },
           coordinates: [
             [
               [
@@ -18140,6 +18173,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Kakamega',
+          properties: {
+            'hc-key': 'Kakamega'
+          },
           coordinates: [
             [
               [
@@ -18934,6 +18970,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Kericho',
+          properties: {
+            'hc-key': 'Kericho'
+          },
           coordinates: [
             [
               [
@@ -19586,6 +19625,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Kiambu',
+          properties: {
+            'hc-key': 'Kiambu'
+          },
           coordinates: [
             [
               [
@@ -20442,6 +20484,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Kilifi',
+          properties: {
+            'hc-key': 'Kilifi'
+          },
           coordinates: [
             [
               [
@@ -22349,6 +22394,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Kirinyaga',
+          properties: {
+            'hc-key': 'Kirinyaga'
+          },
           coordinates: [
             [
               [
@@ -22931,6 +22979,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Kisii',
+          properties: {
+            'hc-key': 'Kisii'
+          },
           coordinates: [
             [
               [
@@ -27045,6 +27096,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Kisumu',
+          properties: {
+            'hc-key': 'Kisumu'
+          },
           coordinates: [
             [
               [
@@ -27535,6 +27589,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Kitui',
+          properties: {
+            'hc-key': 'Kitui'
+          },
           coordinates: [
             [
               [
@@ -29322,6 +29379,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Kwale',
+          properties: {
+            'hc-key': 'Kwale'
+          },
           coordinates: [
             [
               [
@@ -29647,6 +29707,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Laikipia',
+          properties: {
+            'hc-key': 'Laikipia'
+          },
           coordinates: [
             [
               [
@@ -30358,6 +30421,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Lamu',
+          properties: {
+            'hc-key': 'Lamu'
+          },
           coordinates: [
             [
               [
@@ -30439,6 +30505,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Machakos',
+          properties: {
+            'hc-key': 'Machakos'
+          },
           coordinates: [
             [
               [
@@ -31860,6 +31929,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Makueni',
+          properties: {
+            'hc-key': 'Makueni'
+          },
           coordinates: [
             [
               [
@@ -33432,6 +33504,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Mandera',
+          properties: {
+            'hc-key': 'Mandera'
+          },
           coordinates: [
             [
               [
@@ -33996,6 +34071,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Marsabit',
+          properties: {
+            'hc-key': 'Marsabit'
+          },
           coordinates: [
             [
               [
@@ -35226,6 +35304,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Meru',
+          properties: {
+            'hc-key': 'Meru'
+          },
           coordinates: [
             [
               [
@@ -35878,6 +35959,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Migori',
+          properties: {
+            'hc-key': 'Migori'
+          },
           coordinates: [
             [
               [
@@ -37141,6 +37225,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Mombasa',
+          properties: {
+            'hc-key': 'Mombasa'
+          },
           coordinates: [
             [
               [
@@ -37740,6 +37827,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Muranga',
+          properties: {
+            'hc-key': 'Muranga'
+          },
           coordinates: [
             [
               [
@@ -38379,6 +38469,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Nairobi',
+          properties: {
+            'hc-key': 'Nairobi'
+          },
           coordinates: [
             [
               [
@@ -38756,6 +38849,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Nakuru',
+          properties: {
+            'hc-key': 'Nakuru'
+          },
           coordinates: [
             [
               [
@@ -40093,6 +40189,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Nandi',
+          properties: {
+            'hc-key': 'Nandi'
+          },
           coordinates: [
             [
               [
@@ -40600,6 +40699,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Narok',
+          properties: {
+            'hc-key': 'Narok'
+          },
           coordinates: [
             [
               [
@@ -42302,6 +42404,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Nyamira',
+          properties: {
+            'hc-key': 'Nyamira'
+          },
           coordinates: [
             [
               [
@@ -44284,6 +44389,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Nyandarua',
+          properties: {
+            'hc-key': 'Nyandarua'
+          },
           coordinates: [
             [
               [
@@ -45251,6 +45359,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Nyeri',
+          properties: {
+            'hc-key': 'Nyeri'
+          },
           coordinates: [
             [
               [
@@ -45709,6 +45820,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Siaya',
+          properties: {
+            'hc-key': 'Siaya'
+          },
           coordinates: [
             [
               [
@@ -46158,6 +46272,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'TaitaTaveta',
+          properties: {
+            'hc-key': 'TaitaTaveta'
+          },
           coordinates: [
             [
               [
@@ -46741,6 +46858,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Tana River',
+          properties: {
+            'hc-key': 'Tana River'
+          },
           coordinates: [
             [
               [
@@ -48247,6 +48367,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Tharaka Nithi',
+          properties: {
+            'hc-key': 'Tharaka Nithi'
+          },
           coordinates: [
             [
               [
@@ -48848,6 +48971,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Trans Nzoia',
+          properties: {
+            'hc-key': 'Trans Nzoia'
+          },
           coordinates: [
             [
               [
@@ -49397,6 +49523,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Turkana',
+          properties: {
+            'hc-key': 'Turkana'
+          },
           coordinates: [
             [
               [
@@ -51041,6 +51170,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Uasin Gishu',
+          properties: {
+            'hc-key': 'Uasin Gishu'
+          },
           coordinates: [
             [
               [
@@ -51649,6 +51781,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Vihiga',
+          properties: {
+            'hc-key': 'Vihiga'
+          },
           coordinates: [
             [
               [
@@ -51937,6 +52072,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'Wajir',
+          properties: {
+            'hc-key': 'Wajir'
+          },
           coordinates: [
             [
               [
@@ -53064,6 +53202,9 @@ export default {
         {
           type: 'MultiPolygon',
           id: 'West Pokot',
+          properties: {
+            'hc-key': 'West Pokot'
+          },
           coordinates: [
             [
               [
