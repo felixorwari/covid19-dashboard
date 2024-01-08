@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://covid19-dashboard-ten.vercel.app/sitemap.xml
