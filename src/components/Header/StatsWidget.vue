@@ -3,7 +3,54 @@ export default {
   data() {
     return {
       testingData: {}, // Object to store fetched data
-      loading: true // loading flag
+      loading: true, // loading flag
+      statsWidgets: [
+        {
+          title: 'Total Tested',
+          total: (data) =>
+            data.totalTested ? data.totalTested.travel + data.totalTested.screening : 0,
+          items: [
+            { label: 'Travel', value: (data) => data.totalTested?.travel },
+            { label: 'Screening', value: (data) => data.totalTested?.screening }
+          ]
+        },
+        {
+          title: 'Citizens Tested',
+          total: (data) =>
+            data.citizensTested ? data.citizensTested.positive + data.citizensTested.negative : 0,
+          items: [
+            {
+              label: 'Positive',
+              value: (data) => data.citizensTested?.positive,
+              labelClass: 'px-2 text-red-700 bg-red-200 rounded-full dark:bg-red-100'
+            },
+            {
+              label: 'Negative',
+              value: (data) => data.citizensTested?.negative,
+              labelClass: 'px-2 text-lime-700 bg-lime-200 rounded-full dark:bg-lime-100'
+            }
+          ]
+        },
+        {
+          title: 'Foreigners Tested',
+          total: (data) =>
+            data.foreignersTested
+              ? data.foreignersTested.positive + data.foreignersTested.negative
+              : 0,
+          items: [
+            {
+              label: 'Positive',
+              value: (data) => data.foreignersTested?.positive,
+              labelClass: 'px-2 text-red-700 bg-red-200 rounded-full dark:bg-red-100'
+            },
+            {
+              label: 'Negative',
+              value: (data) => data.foreignersTested?.negative,
+              labelClass: 'px-2 text-lime-700 bg-lime-200 rounded-full dark:bg-lime-100'
+            }
+          ]
+        }
+      ]
     }
   },
 
@@ -35,97 +82,39 @@ export default {
 
 <template>
   <div v-if="loading" class="mx-auto animate-pulse">Loading...</div>
-  <div v-else class="grid grid-cols-3 divide-x">
-    <div class="flex flex-col py-5 px-7">
-      <h4 class="text-sm text-gray-400">Total Tested</h4>
-
-      <div class="flex justify-between mb-2 gap-7">
-        <p class="text-3xl font-bold">
-          {{
-            (testingData.totalTested.travel + testingData.totalTested.screening).toLocaleString()
-          }}
+  <div
+    v-else
+    class="grid grid-cols-1 divide-y md:divide-y-0 md:divide-x md:grid-cols-3 dark:divide-gray-600"
+  >
+    <div
+      v-for="(widget, index) in statsWidgets"
+      :key="widget.title"
+      class="flex flex-col px-7 py-5"
+    >
+      <h4 class="text-sm text-gray-500 dark:text-gray-400">{{ widget.title }}</h4>
+      <div class="flex gap-7 justify-between mb-2">
+        <p class="text-3xl font-bold dark:text-gray-200">
+          {{ widget.total(testingData).toLocaleString() }}
         </p>
-        <div class="chart">
-          <img src="../../assets/line-chart.svg" class="object-contain w-32 h-auto" alt="line chart">
+        <div class="flex justify-end items-center">
+          <img
+            src="../../assets/line-chart.svg"
+            class="object-contain w-40 h-auto md:w-32"
+            alt="line chart"
+          />
         </div>
       </div>
-
       <div class="flex justify-between text-xs font-medium">
-        <p class="text-gray-400 uppercase">
-          Travel
-          <span class="ml-2 text-gray-700">{{
-            testingData.totalTested.travel.toLocaleString()
-          }}</span>
-        </p>
-        <p class="text-gray-400 uppercase">
-          Screening
-          <span class="ml-2 text-gray-700">{{
-            testingData.totalTested.screening.toLocaleString()
-          }}</span>
-        </p>
-      </div>
-    </div>
-
-    <div class="flex flex-col py-5 px-7">
-      <h4 class="text-sm text-gray-400">Citizens Tested</h4>
-
-      <div class="flex justify-between mb-2 gap-7">
-        <p class="text-3xl font-bold">
-          {{
-            (
-              testingData.citizensTested.positive + testingData.citizensTested.negative
-            ).toLocaleString()
-          }}
-        </p>
-        <div class="chart">
-          <img src="../../assets/line-chart.svg" class="object-contain w-32 h-auto" alt="line chart">
-        </div>
-      </div>
-
-      <div class="flex justify-between text-xs font-medium">
-        <p class="text-gray-400 uppercase">
-          <span class="px-2 text-red-700 bg-red-200 rounded-full">Positive</span>
-          <span class="ml-2 text-gray-700">{{
-            testingData.citizensTested.positive.toLocaleString()
-          }}</span>
-        </p>
-        <p class="text-gray-400 uppercase">
-          <span class="px-2 rounded-full text-lime-700 bg-lime-200">Negative</span>
-          <span class="ml-2 text-gray-700">{{
-            testingData.citizensTested.negative.toLocaleString()
-          }}</span>
-        </p>
-      </div>
-    </div>
-
-    <div class="flex flex-col py-5 px-7">
-      <h4 class="text-sm text-gray-400">Foreigners Tested</h4>
-
-      <div class="flex justify-between mb-2 gap-7">
-        <p class="text-3xl font-bold">
-          {{
-            (
-              testingData.foreignersTested.positive + testingData.foreignersTested.negative
-            ).toLocaleString()
-          }}
-        </p>
-        <div class="chart">
-          <img src="../../assets/line-chart.svg" class="object-contain w-32 h-auto" alt="line chart">
-        </div>
-      </div>
-
-      <div class="flex justify-between text-xs font-medium">
-        <p class="text-gray-400 uppercase">
-          <span class="px-2 text-red-700 bg-red-200 rounded-full">Positive</span>
-          <span class="ml-2 text-gray-700">{{
-            testingData.foreignersTested.positive.toLocaleString()
-          }}</span>
-        </p>
-        <p class="text-gray-400 uppercase">
-          <span class="px-2 rounded-full text-lime-700 bg-lime-200">Negative</span>
-          <span class="ml-2 text-gray-700">{{
-            testingData.foreignersTested.negative.toLocaleString()
-          }}</span>
+        <p
+          v-for="(item, i) in widget.items"
+          :key="item.label"
+          class="text-gray-400 uppercase dark:text-gray-500"
+        >
+          <span v-if="item.labelClass" :class="item.labelClass">{{ item.label }}</span>
+          <template v-else>{{ item.label }}</template>
+          <span class="ml-2 text-gray-700 dark:text-gray-400">
+            {{ item.value(testingData)?.toLocaleString() }}
+          </span>
         </p>
       </div>
     </div>
