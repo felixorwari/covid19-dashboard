@@ -86,12 +86,10 @@ export default {
     v-else
     class="grid grid-cols-1 divide-y md:divide-y-0 md:divide-x md:grid-cols-3 dark:divide-gray-600"
   >
-    <div
-      v-for="(widget, index) in statsWidgets"
-      :key="widget.title"
-      class="flex flex-col px-7 py-5"
-    >
-      <h4 class="text-sm text-gray-500 dark:text-gray-400">{{ widget.title }}</h4>
+    <div v-for="widget in statsWidgets" :key="widget.title" class="flex flex-col px-7 py-5">
+      <h4 class="text-sm text-gray-500 dark:text-gray-400">
+        {{ widget.title }}
+      </h4>
       <div class="flex gap-7 justify-between mb-2">
         <p class="text-3xl font-bold dark:text-gray-200">
           {{ widget.total(testingData).toLocaleString() }}
@@ -106,7 +104,7 @@ export default {
       </div>
       <div class="flex justify-between text-xs font-medium">
         <p
-          v-for="(item, i) in widget.items"
+          v-for="item in widget.items"
           :key="item.label"
           class="text-gray-400 uppercase dark:text-gray-500"
         >
