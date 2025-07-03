@@ -6,7 +6,8 @@ export default {
     return {
       mapOptions: {
         chart: {
-          map: kenyaMap
+          map: kenyaMap,
+          height: '80%'
         },
         title: {
           text: ''
@@ -20,7 +21,7 @@ export default {
           }
         },
         legend: {
-          enabled: false
+          enabled: true
         },
         colorAxis: {
           min: 10,
