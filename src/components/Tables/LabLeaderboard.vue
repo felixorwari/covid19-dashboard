@@ -42,14 +42,18 @@ export default {
     </template>
 
     <template #table-headings>
-      <th scope="col" class="py-3 pl-6 pr-2 font-normal">Laboratory</th>
-      <th scope="col" class="py-3 pl-2 pr-6 font-normal text-right">Total Tests</th>
+      <th scope="col" class="py-3 pr-2 pl-6 font-normal">Laboratory</th>
+      <th scope="col" class="py-3 pr-6 pl-2 font-normal text-right">Total Tests</th>
     </template>
 
     <template #table-rows>
-      <tr v-for="item in labData" :key="item.name" class="border-b hover:bg-gray-50">
-        <td class="py-3 pl-6 pr-2">{{ item.name }}</td>
-        <td class="py-3 pl-2 pr-6 text-right">{{ item.tests.toLocaleString() }}</td>
+      <tr
+        v-for="item in labData"
+        :key="item.name"
+        class="border-b dark:border-b-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800"
+      >
+        <td class="py-3 pr-2 pl-6">{{ item.name }}</td>
+        <td class="py-3 pr-6 pl-2 text-right">{{ item.tests.toLocaleString() }}</td>
       </tr>
     </template>
   </table-template>
