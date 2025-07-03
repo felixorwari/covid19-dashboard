@@ -4,7 +4,7 @@ This template should help get you started developing with Vue 3 in Vite.
 
 ## Preview URL
 
-Visit [covid19-dashboard-ten.vercel.app]
+Visit [https://covid19-dashboard-ten.vercel.app]
 
 ## Recommended IDE Setup
 

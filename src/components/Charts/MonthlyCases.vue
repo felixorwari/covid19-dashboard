@@ -12,8 +12,8 @@ export default {
           enabled: false
         },
         stroke: {
-          width: 3,
-          colors: ['#fff']
+          width: 2,
+          colors: ['gray']
         },
         xaxis: {
           categories: [
@@ -41,7 +41,33 @@ export default {
             borderRadiusApplication: 'end',
             columnWidth: '65%'
           }
-        }
+        },
+        responsive: [
+          {
+            breakpoint: 480,
+            options: {
+              chart: {
+                width: 320
+              }
+            }
+          },
+          {
+            breakpoint: 800,
+            options: {
+              chart: {
+                width: 640
+              }
+            }
+          },
+          {
+            breakpoint: 1400,
+            options: {
+              chart: {
+                width: 800
+              }
+            }
+          }
+        ]
       },
       chartSeries: []
     }
@@ -78,12 +104,12 @@ export default {
 </script>
 
 <template>
-  <div class="bg-white rounded-lg shadow">
-    <div class="px-6 py-5 border-b">
-      <h4 class="font-semibold">Covid-19 Monthly Cases</h4>
+  <div class="bg-white rounded-lg shadow dark:bg-gray-700">
+    <div class="px-6 py-5 border-b dark:border-b-gray-800">
+      <h4 class="font-semibold dark:text-gray-200">Covid-19 Monthly Cases</h4>
     </div>
     <apexchart
-      :width="820"
+      :width="800"
       :height="385"
       type="bar"
       :options="chartOptions"

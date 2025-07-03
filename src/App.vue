@@ -25,35 +25,31 @@ export default {
 </script>
 
 <template>
-  <div class="mx-auto lg:max-w-7xl space-y-7">
+  <div class="mx-auto space-y-7 max-w-7xl">
     <filter-buttons></filter-buttons>
 
     <header-widgets></header-widgets>
 
-    <div class="grid lg:grid-cols-3 gap-7">
+    <div class="grid gap-7 lg:grid-cols-3">
       <registered-labs></registered-labs>
       <positive-cases></positive-cases>
       <negative-cases></negative-cases>
+    </div>
 
-      <div class="flex col-span-2">
-        <div class="w-full min-h-full bg-white rounded-lg shadow">
-          <div class="px-6 py-5 border-b">
-            <h4 class="font-semibold">Covid-19 Positive Cases by County</h4>
-          </div>
-
-          <kenya-counties></kenya-counties>
-        </div>
+    <div class="grid grid-cols-1 gap-7 lg:grid-cols-3">
+      <div class="flex lg:col-span-2">
+        <kenya-counties></kenya-counties>
       </div>
 
-      <div class="col-span-1">
+      <div class="lg:col-span-1">
         <states-leaderboard></states-leaderboard>
       </div>
 
-      <div class="col-span-1">
+      <div class="lg:col-span-1">
         <lab-leaderboard></lab-leaderboard>
       </div>
 
-      <div class="col-span-2">
+      <div class="lg:col-span-2">
         <monthly-cases class="mx-auto"></monthly-cases>
       </div>
     </div>

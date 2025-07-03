@@ -38,20 +38,24 @@ export default {
 <template>
   <table-template>
     <template #heading>
-      <h4 class="font-semibold">States Leader Board</h4>
+      <h4 class="">States Leader Board</h4>
     </template>
 
     <template #table-headings>
-      <th scope="col" class="py-3 pl-6 pr-2 font-normal">County</th>
+      <th scope="col" class="py-3 pr-2 pl-6 font-normal">County</th>
       <th scope="col" class="px-2 py-3 font-normal text-right">Positive Cases</th>
-      <th scope="col" class="py-3 pl-2 pr-6 font-normal text-right">Negative Cases</th>
+      <th scope="col" class="py-3 pr-6 pl-2 font-normal text-right">Negative Cases</th>
     </template>
 
     <template #table-rows>
-      <tr v-for="item in statesData" :key="item.name" class="border-b hover:bg-gray-50">
-        <td class="py-3 pl-6 pr-2">{{ item.name }}</td>
+      <tr
+        v-for="item in statesData"
+        :key="item.name"
+        class="border-b dark:border-b-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800"
+      >
+        <td class="py-3 pr-2 pl-6">{{ item.name }}</td>
         <td class="px-2 py-3 text-right">{{ item.positive.toLocaleString() }}</td>
-        <td class="py-3 pl-2 pr-6 text-right">{{ item.negative.toLocaleString() }}</td>
+        <td class="py-3 pr-6 pl-2 text-right">{{ item.negative.toLocaleString() }}</td>
       </tr>
     </template>
   </table-template>
