@@ -65,26 +65,24 @@ export default {
     fetchSeriesData() {
       // Fetch data from the states JSON file
       fetch('/data/states-leaderboard.json')
-        .then(response => response.json())
-        .then(data => {
+        .then((response) => response.json())
+        .then((data) => {
           // Assign the fetched data to the map series data property
-          this.transformSeriesData(data);
+          this.transformSeriesData(data)
         })
-        .catch(error => {
-          console.error('Error fetching map series data:', error);
-        });
+        .catch((error) => {
+          console.error('Error fetching map series data:', error)
+        })
     },
     transformSeriesData(originalData) {
       // Iterate over the keys of the original data
-      Object.keys(originalData).forEach(key => {
-        const locationData = originalData[key];
+      Object.keys(originalData).forEach((key) => {
+        const locationData = originalData[key]
 
-        const transformedData = [
-          locationData.name, locationData.positive
-        ];
+        const transformedData = [locationData.name, locationData.positive]
 
         // Push the new object into the map series data array
-        this.mapOptions.series[0].data.push(transformedData);
+        this.mapOptions.series[0].data.push(transformedData)
       })
     }
   }
@@ -92,12 +90,22 @@ export default {
 </script>
 
 <template>
-  <highcharts :constructor-type="'mapChart'" :options="mapOptions" class="w-auto h-full rounded-b-lg"></highcharts>
+  <div class="w-full min-h-full bg-white rounded-lg shadow dark:bg-gray-700">
+    <div class="px-6 py-5 border-b dark:border-b-gray-800">
+      <h4 class="font-semibold dark:text-gray-200">Covid-19 Positive Cases by County</h4>
+    </div>
+
+    <highcharts
+      :constructor-type="'mapChart'"
+      :options="mapOptions"
+      class="w-auto h-full"
+    ></highcharts>
+  </div>
 </template>
 
 <style>
 .highcharts-container {
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
 }
 </style>
