@@ -105,7 +105,7 @@ export default {
 
 <template>
   <div class="bg-white rounded-lg shadow dark:bg-gray-700">
-    <div class="px-6 py-5 border-b dark:border-b-gray-800">
+    <div class="px-6 py-5 border-b border-gray-200 dark:border-b-gray-800">
       <h4 class="font-semibold dark:text-gray-200">Covid-19 Monthly Cases</h4>
     </div>
     <apexchart

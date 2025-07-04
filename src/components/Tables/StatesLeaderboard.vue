@@ -51,7 +51,7 @@ export default {
       <tr
         v-for="item in statesData"
         :key="item.name"
-        class="border-b dark:border-b-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800"
+        class="border-b border-gray-200 dark:border-b-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800"
       >
         <td class="py-3 pr-2 pl-6">{{ item.name }}</td>
         <td class="px-2 py-3 text-right">{{ item.positive.toLocaleString() }}</td>
