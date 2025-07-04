@@ -6,7 +6,8 @@ export default {
     return {
       mapOptions: {
         chart: {
-          map: kenyaMap
+          map: kenyaMap,
+          height: '80%'
         },
         title: {
           text: ''
@@ -20,7 +21,7 @@ export default {
           }
         },
         legend: {
-          enabled: false
+          enabled: true
         },
         colorAxis: {
           min: 10,
@@ -91,7 +92,7 @@ export default {
 
 <template>
   <div class="w-full min-h-full bg-white rounded-lg shadow dark:bg-gray-700">
-    <div class="px-6 py-5 border-b dark:border-b-gray-800">
+    <div class="px-6 py-5 border-b border-gray-200 dark:border-b-gray-800">
       <h4 class="font-semibold dark:text-gray-200">Covid-19 Positive Cases by County</h4>
     </div>
 
