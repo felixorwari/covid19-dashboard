@@ -5,11 +5,17 @@ export function useTheme() {
 
   function applyTheme(value) {
     const root = document.documentElement;
+    const body = document.body;
     const isSystemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
     if (value === 'dark' || (value === 'system' && isSystemDark)) {
       root.classList.add('dark');
+      body.classList.add('highcharts-dark');
+      body.classList.remove('highcharts-light');
     } else {
       root.classList.remove('dark');
+      body.classList.add('highcharts-light');
+      body.classList.remove('highcharts-dark');
     }
   }
 
@@ -19,7 +25,7 @@ export function useTheme() {
     applyTheme(value);
   }
 
-  function handleSystemChange(e) {
+  function handleSystemChange() {
     if (theme.value === 'system') {
       applyTheme('system');
     }
