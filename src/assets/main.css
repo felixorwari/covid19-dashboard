@@ -2,6 +2,19 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --text-xxs: 0.625rem;
+}
+
 html {
   font-family: 'Inter', sans-serif;
+}
+
+.highcharts-dark .highcharts-background {
+  --highcharts-background-color: var(--color-gray-700);
+}
+
+.highcharts-dark .highcharts-series-group {
+  --highcharts-neutral-color-3: var(--color-gray-800);
+  --highcharts-neutral-color-10: var(--color-gray-900);
 }

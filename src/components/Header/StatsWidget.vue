@@ -22,12 +22,12 @@ export default {
             {
               label: 'Positive',
               value: (data) => data.citizensTested?.positive,
-              labelClass: 'px-2 text-red-700 bg-red-200 rounded-full dark:bg-red-100'
+              labelClass: 'pl-1 pr-2 text-red-700 bg-red-200 rounded-full dark:bg-red-100'
             },
             {
               label: 'Negative',
               value: (data) => data.citizensTested?.negative,
-              labelClass: 'px-2 text-lime-700 bg-lime-200 rounded-full dark:bg-lime-100'
+              labelClass: 'pl-1 pr-2 text-lime-700 bg-lime-200 rounded-full dark:bg-lime-100'
             }
           ]
         },
@@ -41,12 +41,12 @@ export default {
             {
               label: 'Positive',
               value: (data) => data.foreignersTested?.positive,
-              labelClass: 'px-2 text-red-700 bg-red-200 rounded-full dark:bg-red-100'
+              labelClass: 'pl-1 pr-2 text-red-700 bg-red-200 rounded-full dark:bg-red-100'
             },
             {
               label: 'Negative',
               value: (data) => data.foreignersTested?.negative,
-              labelClass: 'px-2 text-lime-700 bg-lime-200 rounded-full dark:bg-lime-100'
+              labelClass: 'pl-1 pr-2 text-lime-700 bg-lime-200 rounded-full dark:bg-lime-100'
             }
           ]
         }
@@ -84,7 +84,7 @@ export default {
   <div v-if="loading" class="mx-auto animate-pulse">Loading...</div>
   <div
     v-else
-    class="grid grid-cols-1 divide-y md:divide-y-0 md:divide-x md:grid-cols-3 dark:divide-gray-600"
+    class="grid grid-cols-1 divide-y divide-gray-200 md:divide-y-0 md:divide-x md:grid-cols-3 dark:divide-gray-600"
   >
     <div v-for="widget in statsWidgets" :key="widget.title" class="flex flex-col px-7 py-5">
       <h4 class="text-sm text-gray-500 dark:text-gray-400">
@@ -108,8 +108,11 @@ export default {
           :key="item.label"
           class="text-gray-400 uppercase dark:text-gray-500"
         >
-          <span v-if="item.labelClass" :class="item.labelClass">{{ item.label }}</span>
-          <template v-else>{{ item.label }}</template>
+          <span v-if="item.labelClass" :class="item.labelClass" class="text-xxs">
+            <span class="inline-block mr-1 w-2 h-2 rounded-full border-2 border-inherit"></span
+            >{{ item.label }}</span
+          >
+          <template v-else class>{{ item.label }}</template>
           <span class="ml-2 text-gray-700 dark:text-gray-400">
             {{ item.value(testingData)?.toLocaleString() }}
           </span>
