@@ -2,8 +2,6 @@
 
 A clean, interactive **COVID-19 data dashboard for Kenya**, showcasing key testing and infection metrics using **Vue.js, ApexCharts, and Highcharts Maps**.
 
-Built as a **consulting showcase project** for demonstrating my front-end engineering capabilities for firms seeking a skilled, product-focused **Vue.js developer**.
-
 ---
 
 ## 🚀 Features
@@ -35,7 +33,6 @@ This dashboard was built:
 - To demonstrate **Vue.js component architecture and state management**.
 - To showcase **data visualization skills** using **ApexCharts and Highcharts**.
 - To highlight **clean, scalable front-end engineering practices**.
-- As a practical, meaningful project while pursuing a **full-time front-end role**.
 
 ---
 
@@ -56,11 +53,11 @@ This dashboard was built:
 
 **Light Mode**
 
-![Dashboard Light](public/dashboard-light.png)
+![Dashboard Light](https://github.com/felixorwari/covid19-dashboard/blob/d38229d55444328a585b104afe42b4fd70c16e9f/public/previews/dashboard-dark.png)
 
 **Dark Mode**
 
-![Dashboard Dark](public/dashboard-dark.png)
+![Dashboard Dark](https://github.com/felixorwari/covid19-dashboard/blob/d38229d55444328a585b104afe42b4fd70c16e9f/public/previews/dashboard-light.png)
 
 ---
 
