@@ -1,39 +1,135 @@
-# covid19-dashboard
+# 🇰🇪 Kenya COVID-19 Dashboard
 
-This template should help get you started developing with Vue 3 in Vite.
+A clean, interactive **COVID-19 data dashboard for Kenya**, showcasing key testing and infection metrics using **Vue.js, ApexCharts, and Highcharts Maps**.
 
-## Preview URL
+Built as a **consulting showcase project** for demonstrating my front-end engineering capabilities for firms seeking a skilled, product-focused **Vue.js developer**.
 
-Visit [https://covid19-dashboard-ten.vercel.app]
+---
 
-## Recommended IDE Setup
+## 🚀 Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- **Total Tests Conducted**  
+  Displays overall COVID-19 testing numbers in Kenya.
 
-## Customize configuration
+- **Citizens vs Foreigners Tested**  
+  Compares testing among citizens and foreigners.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- **Registered Testing Laboratories**  
+  Shows the count and status of registered testing labs across the country.
 
-## Project Setup
+- **Positive and Negative Case Tracking**  
+  Real-time display of total positive and negative case counts.
 
-```sh
+- **Infections by County (Leaderboard)**  
+  Interactive **Highcharts map** with a leaderboard showing infection rates across counties.
+
+- **Monthly Testing Trends**  
+  **ApexCharts line and bar charts** visualizing tests conducted per month for clear trend analysis.
+
+---
+
+## 🎯 Purpose
+
+This dashboard was built:
+
+- To demonstrate **Vue.js component architecture and state management**.
+- To showcase **data visualization skills** using **ApexCharts and Highcharts**.
+- To highlight **clean, scalable front-end engineering practices**.
+- As a practical, meaningful project while pursuing a **full-time front-end role**.
+
+---
+
+## 🛠️ Technologies & Skills Demonstrated
+
+✅ **Vue.js**: Component-based architecture, routing, and state management  
+✅ **ApexCharts**: Interactive and responsive charts (line, bar, donut)  
+✅ **Highcharts Maps**: Geographic data visualization for infections by county  
+✅ **REST API Data Handling**: Simulated/real API integration with data validation  
+✅ **Responsive Design**: Mobile-first, clean, and clear layouts  
+✅ **Data Processing & Aggregation**: Transforming raw COVID-19 data for visualization  
+✅ **Clean Code Practices**: Readable, maintainable code ready for production  
+✅ **Project Deployment**: Built with CI/CD readiness and scalability in mind
+
+---
+
+## 📸 Screenshots
+
+**Light Mode**
+
+![Dashboard Light](public/dashboard-light.png)
+
+**Dark Mode**
+
+![Dashboard Dark](public/dashboard-dark.png)
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/felixorwari/covid19-dashboard.git
+cd covid19-dashboard
+```
+
+1. **Install dependencies:**
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+1. **Compile and hot-reload for development:**
 
-```sh
+```bash
 npm run dev
 ```
 
-### Compile and Minify for Production
+1. **Compile and minify for production:**
 
-```sh
+```bash
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+1. **Run the development server:**
 
-```sh
-npm run lint
+```bash
+npm run serve
 ```
+
+1. **View in your browser:**
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📈 Data Sources
+
+- [Kenya Ministry of Health COVID-19 Updates](https://www.health.go.ke/)
+- Public datasets and manual data compilation for demonstration purposes.
+
+---
+
+## 🤝 Connect with Me
+
+I build scalable, user-centered web applications.
+
+- 🔗[LinkedIn Profile](https://linkedin.com/in/felixorwari)
+- 🧑🏽‍💻[Github](https://github.com/felixorwari)
+- ✉️[Email Me](mailto://felix.orwari@gmail.com)
+
+---
+
+## 📝 License
+
+This project is open for demonstration and learning purposes. For professional use or further development, please reach out for collaboration or licensing discussions.
+
+---
+
+## 🙏 Acknowledgements
+
+- [Vue.js](https://vuejs.org/)
+- [ApexCharts](https://apexcharts.com/)
+- [Highcharts Maps](https://www.highcharts.com/maps/)
