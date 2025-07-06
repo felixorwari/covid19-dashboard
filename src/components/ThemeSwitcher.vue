@@ -1,14 +1,15 @@
 <template>
-  <div class="flex gap-2">
+  <div class="flex gap-2 items-center">
+    <span class="text-sm text-gray-400 dark:text-gray-500">Switch theme:</span>
     <button
       v-for="option in options"
       :title="option.value"
       :key="option.value"
       @click="setTheme(option.value)"
       :class="[
-        'flex items-center gap-1 px-3 py-1 rounded focus:outline-none border transition hover:cursor-pointer',
+        'h-full flex items-center gap-1 px-3 py-1 rounded focus:outline-none border transition hover:cursor-pointer',
         theme === option.value
-          ? 'bg-blue-600 text-white border-blue-600'
+          ? 'bg-slate-600 text-white border-slate-600'
           : 'bg-gray-100 text-gray-700 border-gray-300 dark:bg-gray-800 dark:text-gray-200 dark:border-gray-600'
       ]"
     >
@@ -41,7 +42,6 @@
 
 <script setup>
 import { useTheme } from '@/composables/useTheme.js'
-import { computed } from 'vue'
 
 const { theme, setTheme } = useTheme()
 const options = [

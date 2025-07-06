@@ -28,7 +28,7 @@ export default {
 
 <template>
   <div class="mx-auto space-y-7 max-w-7xl">
-    <div class="flex gap-4 justify-between">
+    <div class="flex flex-wrap-reverse gap-4 justify-between">
       <filter-buttons></filter-buttons>
       <theme-switcher></theme-switcher>
     </div>

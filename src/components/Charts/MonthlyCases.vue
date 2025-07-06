@@ -1,106 +1,148 @@
-<script>
-export default {
-  data() {
-    return {
-      chartOptions: {
-        chart: {
-          toolbar: {
-            show: false
-          }
-        },
-        dataLabels: {
-          enabled: false
-        },
-        stroke: {
-          width: 2,
-          colors: ['gray']
-        },
-        xaxis: {
-          categories: [
-            'Jan',
-            'Feb',
-            'Mar',
-            'Apr',
-            'May',
-            'Jun',
-            'Jul',
-            'Aug',
-            'Sep',
-            'Oct',
-            'Nov',
-            'Dec'
-          ]
-        },
-        colors: ['#D13F4A', '#92AAEC'],
-        legend: {
-          show: false
-        },
-        plotOptions: {
-          bar: {
-            borderRadius: 9,
-            borderRadiusApplication: 'end',
-            columnWidth: '65%'
-          }
-        },
-        responsive: [
-          {
-            breakpoint: 480,
-            options: {
-              chart: {
-                width: 320
-              }
-            }
-          },
-          {
-            breakpoint: 800,
-            options: {
-              chart: {
-                width: 640
-              }
-            }
-          },
-          {
-            breakpoint: 1400,
-            options: {
-              chart: {
-                width: 800
-              }
-            }
-          }
-        ]
-      },
-      chartSeries: []
-    }
-  },
-  async mounted() {
-    // Fetch chart data
-    try {
-      const response = await fetch('/data/monthly-covid-cases.json')
-      const data = await response.json()
-      this.processChartData(data)
-    } catch (error) {
-      console.error('Error fetching monthly covid cases data:', error)
-    }
-  },
-  methods: {
-    // Hydrate chart series data
-    processChartData(data) {
-      const positiveData = Object.values(data).map((entry) => entry.positive)
-      const negativeData = Object.values(data).map((entry) => entry.negative)
+<script setup>
+import { ref, computed, onMounted } from 'vue'
+import { useTheme } from '@/composables/useTheme.js'
 
-      this.chartSeries = [
-        {
-          name: 'Positive',
-          data: positiveData
-        },
-        {
-          name: 'Negative',
-          data: negativeData
+const { theme } = useTheme()
+const chartSeries = ref([])
+
+// Computed chart options that respond to theme changes
+const chartOptions = computed(() => {
+  const isDark =
+    theme.value === 'dark' ||
+    (theme.value === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+
+  return {
+    chart: {
+      toolbar: {
+        show: false
+      },
+      background: 'transparent'
+    },
+    theme: {
+      mode: isDark ? 'dark' : 'light'
+    },
+    dataLabels: {
+      enabled: false
+    },
+    stroke: {
+      width: 4,
+      colors: isDark ? ['var(--color-gray-700/20)'] : ['var(--color-gray-200/20)']
+    },
+    xaxis: {
+      categories: [
+        'Jan',
+        'Feb',
+        'Mar',
+        'Apr',
+        'May',
+        'Jun',
+        'Jul',
+        'Aug',
+        'Sep',
+        'Oct',
+        'Nov',
+        'Dec'
+      ],
+      labels: {
+        style: {
+          colors: isDark ? '#9CA3AF' : '#374151'
         }
-      ]
-    }
+      },
+      axisBorder: {
+        color: isDark ? '#374151' : '#E5E7EB'
+      },
+      axisTicks: {
+        color: isDark ? '#374151' : '#E5E7EB'
+      }
+    },
+    yaxis: {
+      labels: {
+        style: {
+          colors: isDark ? '#9CA3AF' : '#374151'
+        }
+      },
+      axisBorder: {
+        color: isDark ? '#374151' : '#E5E7EB'
+      },
+      axisTicks: {
+        color: isDark ? '#374151' : '#E5E7EB'
+      }
+    },
+    grid: {
+      borderColor: isDark ? 'var(--color-gray-900)' : 'var(--color-gray-300)',
+      strokeDashArray: 4
+    },
+    colors: ['#D13F4A', '#92AAEC'],
+    legend: {
+      show: false
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 9,
+        borderRadiusApplication: 'end',
+        columnWidth: '65%'
+      }
+    },
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            width: 320
+          }
+        }
+      },
+      {
+        breakpoint: 800,
+        options: {
+          chart: {
+            width: 640
+          }
+        }
+      },
+      {
+        breakpoint: 1400,
+        options: {
+          chart: {
+            width: 800
+          }
+        }
+      }
+    ]
+  }
+})
+
+// Fetch chart data
+const fetchChartData = async () => {
+  try {
+    const response = await fetch('/data/monthly-covid-cases.json')
+    const data = await response.json()
+    processChartData(data)
+  } catch (error) {
+    console.error('Error fetching monthly covid cases data:', error)
   }
 }
+
+// Hydrate chart series data
+const processChartData = (data) => {
+  const positiveData = Object.values(data).map((entry) => entry.positive)
+  const negativeData = Object.values(data).map((entry) => entry.negative)
+
+  chartSeries.value = [
+    {
+      name: 'Positive',
+      data: positiveData
+    },
+    {
+      name: 'Negative',
+      data: negativeData
+    }
+  ]
+}
+
+onMounted(() => {
+  fetchChartData()
+})
 </script>
 
 <template>
