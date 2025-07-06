@@ -70,31 +70,31 @@ git clone https://github.com/felixorwari/covid19-dashboard.git
 cd covid19-dashboard
 ```
 
-1. **Install dependencies:**
+2. **Install dependencies:**
 
 ```bash
 npm install
 ```
 
-1. **Compile and hot-reload for development:**
+3. **Compile and hot-reload for development:**
 
 ```bash
 npm run dev
 ```
 
-1. **Compile and minify for production:**
+4. **Compile and minify for production:**
 
 ```bash
 npm run build
 ```
 
-1. **Run the development server:**
+5. **Run the development server:**
 
 ```bash
 npm run serve
 ```
 
-1. **View in your browser:**
+6. **View in your browser:**
 
 ```
 http://localhost:5173
