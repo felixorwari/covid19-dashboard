@@ -123,9 +123,9 @@ http://localhost:5173
 
 I build scalable, user-centered web applications.
 
-- 🔗[LinkedIn Profile](https://linkedin.com/in/felixorwari)
-- 🧑🏽‍💻[Github](https://github.com/felixorwari)
-- ✉️[Email Me](mailto://felix.orwari@gmail.com)
+- 🔗 [LinkedIn Profile](https://linkedin.com/in/felixorwari)
+- 🧑🏽‍💻 [Github](https://github.com/felixorwari)
+- ✉️ [Email Me](mailto://felix.orwari@gmail.com)
 
 ---
 
