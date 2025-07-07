@@ -5,7 +5,7 @@
 ![Highcharts](https://img.shields.io/badge/Highcharts-Maps-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-![Build](https://img.shields.io/github/actions/workflow/status/felixorwari/covid19-dashboard/deploy.yml?label=build)
+[![Vercel](https://vercelbadge.vercel.app/api/felixorwari/covid19-dashboard)](https://covid19-dashboard-ten.vercel.app)
 ![Last Commit](https://img.shields.io/github/last-commit/felixorwari/covid19-dashboard)
 ![Issues](https://img.shields.io/github/issues/felixorwari/covid19-dashboard)
 ![Stars](https://img.shields.io/github/stars/felixorwari/covid19-dashboard?style=social)
