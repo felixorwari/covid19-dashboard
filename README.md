@@ -1,5 +1,15 @@
 # 🇰🇪 Kenya COVID-19 Dashboard
 
+![Vue.js](https://img.shields.io/badge/Vue.js-3.x-brightgreen)
+![ApexCharts](https://img.shields.io/badge/ApexCharts-Enabled-blue)
+![Highcharts](https://img.shields.io/badge/Highcharts-Maps-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+![Build](https://img.shields.io/github/actions/workflow/status/felixorwari/covid19-dashboard/deploy.yml?label=build)
+![Last Commit](https://img.shields.io/github/last-commit/felixorwari/covid19-dashboard)
+![Issues](https://img.shields.io/github/issues/felixorwari/covid19-dashboard)
+![Stars](https://img.shields.io/github/stars/felixorwari/covid19-dashboard?style=social)
+
 A clean, interactive **COVID-19 data dashboard for Kenya**, showcasing key testing and infection metrics using **Vue.js, ApexCharts, and Highcharts Maps**.
 
 ---
